@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Validación</title>
+    <script src="https://kit.fontawesome.com/646ac4fad6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario sencillo con validación</h1>
+    </header>
+
+    <main>
+        <form action="" class = "formulario" id = "formulario">
+
+            <!-- seccion usuario -->
+            <div class="formulario__grupo" id = "grupo__usuario">
+                <label for="usuario" class= "formulario__label"><b>Usuario</b></label>
+                <div class="formulario__grupo-input">
+                    <input type="text" name="usuario" class="formulario__input" id="usuario" autocomplete="off">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener letras, números y guión bajo.</p>
+                </div>
+            </div>
+
+            <!-- seccion  contraseña -->
+            <div class="formulario__grupo" id = "grupo__password">
+                <label for="password" class= "formulario__label"><b>Contraseña</b></label>
+                <div class="formulario__grupo-input">
+                    <input type="password" name="password" class="formulario__input" id="password" autocomplete="off">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <p class="formulario__input-error">La contraseña debe contener de 4 a 16 dígitos</p>
+                </div>
+            </div>
+
+            <!-- seccion repetir contraseña -->
+            <div class="formulario__grupo" id = "grupo__password2">
+                <label for="password2" class= "formulario__label"><b>Repetir Contraseña</b></label>
+                <div class="formulario__grupo-input">
+                    <input type="password" name="password" class="formulario__input" id="password2" autocomplete="off">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <p class="formulario__input-error">Las contraseñas deben ser iguales.</p>
+                </div>
+            </div>
+
+            <!-- mesajes de confirmacion de datos ingresados -->
+            <div class="formulario__mensaje" id= "formulario__mensaje">
+                <p><i class="fas fa-exclamation-circle"></i><b> Error: </b>Por favor rellene el formulario correctamente.</p>
+            </div>
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id= "formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="derechos">
+                <p>© 2022 U Camp. Todos los derechos reservados. Esta es una página ficticia
+                    para fines académicos.</p>
+                <p>Desarrollado por Roselia García Adame (García Roze)</p>
+            </div>
+            <div class="red-social">
+                <!-- falta arreglar el link de la red social para darle forma en el css -->
+                <span class="fb">
+                    <a class="fa-brands fa-facebook" href="https://www.facebook.com/roze.garcia/"> Sígueme en Facebook</a>
+                </span>
+                <!-- <a href="https://www.facebook.com/roze.garcia/" class="fa-brands fa-facebook"></a> -->
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
