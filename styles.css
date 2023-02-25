@@ -138,12 +138,18 @@ h1 {
     display: block;
 }
 
-.red-social{
-    margin-left: 40%;
+footer .container .derechos p{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: 10%;
+}
+
+footer .container .red-social{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
+    justify-content: center;
+    margin-left: 60%;
 }
 
 /*Validaciones*/
@@ -203,5 +209,30 @@ footer{
     .formulario__mensaje,
     .formulario__grupo-btn-enviar {
     grid-column: 1;
+}
+}
+@media screen and (max-width:500px){
+    h1 {
+        font-size: 1.5em;
+    }
+    .formulario {
+        grid-template-columns: 1fr;
+
+    }
+    .formulario__mensaje {
+        font-size: 0.8em;
+    }
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar {
+    grid-column: 1;
+}
+.derechos  {
+    display: grid;
+    grid-template-columns: repeat;
+    justify-items: center;
+}
+footer .container .red-social{
+    display: flex;
+    margin-left: 45%;
 }
 }
