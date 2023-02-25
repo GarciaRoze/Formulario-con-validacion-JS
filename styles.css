@@ -101,6 +101,13 @@ h1 {
     flex-direction: column;
     align-items: center;
 }
+
+.formulario__grupo.formulario__grupo-btn-enviar{
+    margin-block-start: 30px;
+}
+#formulario__mensaje.formulario__mensaje{
+    margin-block-start: 25px;
+}
 .formulario__btn {
     margin-block-start: 20px;
     height: 45px;
