@@ -239,6 +239,10 @@ footer{
         font-size: 0.5em;
     }
 
+    .formulario__mensaje-exito {
+      font-size: 0.6em;
+    }
+
     #grupo__usuario.formulario__grupo{
         margin-block-end: 35px;
     }
