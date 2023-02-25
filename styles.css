@@ -228,6 +228,9 @@ footer{
     .formulario__grupo-btn-enviar {
         grid-column: 1;
 }
+    #formulario__mensaje.formulario__mensaje{
+        font-size: 0.5em;
+    }
 
     #grupo__usuario.formulario__grupo{
         margin-block-end: 35px;
@@ -237,6 +240,9 @@ footer{
     }
     #grupo__password2.formulario__grupo{
         margin-block-end: 35px;
+    }
+    .formulario__grupo.formulario__grupo-btn-enviar{
+        margin-block-start: 35px;
     }
     .derechos  {
         display: grid;
