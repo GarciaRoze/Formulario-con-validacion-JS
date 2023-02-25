@@ -215,24 +215,36 @@ footer{
     h1 {
         font-size: 1.5em;
     }
+
     .formulario {
         grid-template-columns: 1fr;
 
     }
     .formulario__mensaje {
         font-size: 0.8em;
+        border-spacing: 30px;
     }
     .formulario__mensaje,
     .formulario__grupo-btn-enviar {
-    grid-column: 1;
+        grid-column: 1;
 }
-.derechos  {
-    display: grid;
-    grid-template-columns: repeat;
-    justify-items: center;
+
+    #grupo__usuario.formulario__grupo{
+        margin-block-end: 35px;
+    }
+    #grupo__password.formulario__grupo{
+        margin-block-end: 35px;
+    }
+    #grupo__password2.formulario__grupo{
+        margin-block-end: 35px;
+    }
+    .derechos  {
+        display: grid;
+        grid-template-columns: repeat;
+        justify-items: center;
 }
-footer .container .red-social{
-    display: flex;
-    margin-left: 45%;
+    footer .container .red-social{
+        display: flex;
+        margin-left: 45%;
 }
 }
